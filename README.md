@@ -29,7 +29,7 @@ APP_NAME="Especializa Ti"
 APP_URL=http://localhost:8989
 
 DB_CONNECTION=mysql
-DB_HOST=mysql
+DB_HOST=db
 DB_PORT=3306
 DB_DATABASE=nome_que_desejar_db
 DB_USERNAME=nome_usuario
@@ -62,12 +62,18 @@ Instale as dependências do projeto
 composer install
 ```
 
+Observação: caso você esteja usando Linux e ocorra erro indicando que o diretório vendor não existe, então basta criar o diretório na raiz do projeto (usando o vscode).
+
 
 Gere a key do projeto Laravel
 ```sh
 php artisan key:generate
 ```
 
+Criar tabelas no banco no mysql
+```sh
+php artisan migrate
+```
 
 Acesse o projeto
 [http://localhost:8989](http://localhost:8989)
