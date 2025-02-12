@@ -77,3 +77,28 @@ php artisan migrate
 
 Acesse o projeto
 [http://localhost:8989](http://localhost:8989)
+
+
+### Aula 04 - Autenticação
+
+
+```sh
+composer require laravel/breeze --dev
+```
+
+```sh
+php artisan breeze:install
+```
+_Obs: na instalação selecionar "Blade with Alpine"_
+
+
+```sh
+npm run dev
+```
+_Obs: caso do linux permissão no dir "node_modules"
+
+
+Realizar teste
+```sh
+php artisan test
+```
